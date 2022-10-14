@@ -53,4 +53,3 @@ https://app.quickdatabasediagrams.com/#/d/gM3Nav
 * PHP
 ## СУБД
 MySQL
-# Тестирование
