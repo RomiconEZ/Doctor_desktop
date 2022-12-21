@@ -1,0 +1,267 @@
+<ISSPECS>
+  <DESCRIPTION>
+    <TITLE>Web service fordigital heart diagnostics</TITLE>
+    <SUBJ>Веб сервис по цифровой диагностики сердца</SUBJ>
+  </DESCRIPTION>
+  <DATA>
+    <ENTITY ent_id="anthropometry">
+        <PROPERTY>patient_id</PROPERTY>
+        <PROPERTY>height</PROPERTY>
+        <PROPERTY>weight</PROPERTY>
+        <PROPERTY>BMI</PROPERTY>
+        <PROPERTY>BSA</PROPERTY>
+        <PROPERTY>DBM</PROPERTY>
+        <PROPERTY>CTDS</PROPERTY>
+        <PROPERTY>Marfan</PROPERTY>
+        <PROPERTY>EhlersDanlos</PROPERTY>
+        <PROPERTY>LoeysDitz</PROPERTY>
+        <PROPERTY>Terner</PROPERTY>
+        <PROPERTY>Noonan</PROPERTY>
+        <PROPERTY>employee_id</PROPERTY>
+        <PROPERTY>version</PROPERTY>
+        <PROPERTY>date</PROPERTY>
+    </ENTITY>
+    
+    <ENTITY ent_id="clinical_data">
+      <PROPERTY>visit_id</PROPERTY>
+      <PROPERTY>main_diag</PROPERTY>
+      <PROPERTY>Aortic_dissection</PROPERTY>
+      <PROPERTY>intramural_hematoma</PROPERTY>
+      <PROPERTY>aortic_rupture</PROPERTY>
+      <PROPERTY>patient_state</PROPERTY>
+      <PROPERTY>pain_beh_stern</PROPERTY>
+      <PROPERTY>interscap_reg_pain</PROPERTY>
+      <PROPERTY>conscious_loss</PROPERTY>
+      <PROPERTY>low_extrem_ischemia</PROPERTY>
+      <PROPERTY>employee_id</PROPERTY>
+      <PROPERTY>version</PROPERTY>
+      <PROPERTY>date</PROPERTY>
+</ENTITY>
+
+
+    <ENTITY ent_id="patients_info">
+      <PROPERTY>id</PROPERTY>
+      <PROPERTY>name</PROPERTY>
+      <PROPERTY>surname</PROPERTY>
+      <PROPERTY>patronymic</PROPERTY>
+      <PROPERTY>birth_date</PROPERTY>
+      <PROPERTY>sex</PROPERTY>
+    </ENTITY>
+   
+    <ENTITY ent_id="occopation">
+      <PROPERTY>id</PROPERTY>
+      <PROPERTY>value</PROPERTY>
+    </ENTITY>
+    
+    
+    <ENTITY ent_id="clinics">
+      <PROPERTY>id</PROPERTY>
+      <PROPERTY>name</PROPERTY>
+      <PROPERTY>region</PROPERTY>
+      <PROPERTY>city</PROPERTY>
+    </ENTITY>
+    
+    <ENTITY ent_id="employees">
+      <PROPERTY>id</PROPERTY>
+      <PROPERTY>name</PROPERTY>
+      <PROPERTY>surname</PROPERTY>
+      <PROPERTY>patronymic</PROPERTY>
+      <PROPERTY>birth_date</PROPERTY>
+      <PROPERTY>sex</PROPERTY>
+      <PROPERTY>clinic_id</PROPERTY>
+      <PROPERTY>role_id</PROPERTY>
+      <PROPERTY>occupation_id</PROPERTY>
+      <PROPERTY>work_experience</PROPERTY>
+    </ENTITY>
+    
+    <ENTITY ent_id="roles">
+      <PROPERTY>id</PROPERTY>
+      <PROPERTY>Value</PROPERTY>
+    </ENTITY>
+    
+    <ENTITY ent_id="visit_data">
+      <PROPERTY>patient_id</PROPERTY>
+      <PROPERTY>visit_id</PROPERTY>
+      <PROPERTY>employee_id</PROPERTY>
+      <PROPERTY>examination_place</PROPERTY>
+      <PROPERTY>examination_date</PROPERTY>
+      <PROPERTY>visit_num</PROPERTY>
+      <PROPERTY>comment</PROPERTY>
+      <PROPERTY>clinic_id</PROPERTY>
+    </ENTITY>
+
+     <ENTITY ent_id="concom_disease">
+      <PROPERTY>patient_id</PROPERTY>
+      <PROPERTY>cor_heart_disease_clinic</PROPERTY>
+      <PROPERTY>acute_myocardial_infarction_num</PROPERTY>
+      <PROPERTY>current_myocardial_infarction</PROPERTY>
+      <PROPERTY>diabetes</PROPERTY>
+      <PROPERTY>diabetes_type</PROPERTY>
+      <PROPERTY>cerebrovascular_disease</PROPERTY>
+      <PROPERTY>BCAStenosis</PROPERTY>
+      <PROPERTY>transient_ischemic_attack</PROPERTY>
+      <PROPERTY>ACVA</PROPERTY>
+      <PROPERTY>chronic_lung_disease</PROPERTY>
+      <PROPERTY>prev_infectious_disease</PROPERTY>
+      <PROPERTY>rhythm_conclusion_disturbances</PROPERTY>
+       <PROPERTY>thyroid_disease</PROPERTY>
+      <PROPERTY>acute_renal_failure</PROPERTY>
+      <PROPERTY>chronic_renal_failure</PROPERTY>
+      <PROPERTY>oncology</PROPERTY>
+      <PROPERTY>hematological_disease</PROPERTY>
+       <PROPERTY>pulmonary_embolism</PROPERTY>
+      <PROPERTY>chest_wall_injury</PROPERTY>
+      <PROPERTY>aortic_valve</PROPERTY>
+      <PROPERTY>acquired_AV_disease</PROPERTY>
+      <PROPERTY>AV_degenerative_lesions</PROPERTY>
+       <PROPERTY>AV_infectious_lesions</PROPERTY>
+      <PROPERTY>AVW_traumatic_lesions</PROPERTY>
+      <PROPERTY>employee_id</PROPERTY>
+      <PROPERTY>version</PROPERTY>
+      <PROPERTY>date</PROPERTY>
+    </ENTITY>
+    
+    <ENTITY ent_id="echocardiography">
+      <PROPERTY>VisitPatientID</PROPERTY>
+      <PROPERTY>LVEF</PROPERTY>
+      <PROPERTY>LVEDV</PROPERTY>
+      <PROPERTY>LVESV</PROPERTY>
+      <PROPERTY>AscAorticD</PROPERTY>
+      <PROPERTY>ValsalvaSinusesD</PROPERTY>
+      <PROPERTY>AVLeafletN</PROPERTY>
+      <PROPERTY>AVAnnuFibrD</PROPERTY>
+      <PROPERTY>PeakSpeedAV</PROPERTY>
+      <PROPERTY>AVPressureGradientMax</PROPERTY>
+      <PROPERTY>AVPressureGradientMean</PROPERTY>
+      <PROPERTY>AorticRegurgitationDegree</PROPERTY>
+      <PROPERTY>PulmArterySysBP</PROPERTY>
+      <PROPERTY>MitralInsuffStenPrD</PROPERTY>
+      <PROPERTY>Tricuspi</PROPERTY>
+      <PROPERTY>AtrialSeptalDefectPr</PROPERTY>
+      <PROPERTY>Version</PROPERTY>
+      <PROPERTY>Date</PROPERTY>
+      <PROPERTY>EmpoyeeID</PROPERTY>
+    </ENTITY>
+    
+    <ENTITY ent_id="msqc_angiography_aorta">
+      <PROPERTY>visit_patient_i</PROPERTY>
+      <PROPERTY>AV_annulus_fibrosissinuses_valsalva</PROPERTY>
+      <PROPERTY>sinuses_valsalva</PROPERTY>
+      <PROPERTY>sinotubular_junction</PROPERTY>
+      <PROPERTY>asc_aorta_pulm_art_bif</PROPERTY>
+      <PROPERTY>asc_aorta_before_BCS</PROPERTY>
+      <PROPERTY>AorticArchBeforeCCA</PROPERTY>
+      <PROPERTY>aorticArchBeforeLSA</PROPERTY>
+      <PROPERTY>aorticlsthmus</PROPERTY>
+      <PROPERTY>desc_aorta_middle_part</PROPERTY>
+      <PROPERTY>abdominal_aorta</PROPERTY>
+      <PROPERTY>version</PROPERTY>
+      <PROPERTY>date</PROPERTY>
+      <PROPERTY>employee_id</PROPERTY>
+    </ENTITY>
+    
+    
+    <ENTITY ent_id="patient_history">
+      <PROPERTY>id</PROPERTY>
+      <PROPERTY>dis_heart_blood_vessels_first_line_relatives</PROPERTY>
+      <PROPERTY>relatives_conn_tiss_dysplasia</PROPERTY>
+      <PROPERTY>heart_surgeries_pr</PROPERTY>
+      <PROPERTY>heart_surgeries_type</PROPERTY>
+      <PROPERTY>genetic_analysis_pr</PROPERTY>
+      <PROPERTY>genetic_analysis_res</PROPERTY>
+      <PROPERTY>smoking_experience</PROPERTY>
+      <PROPERTY>alko_consumption_experince</PROPERTY>
+      <PROPERTY>drug_consumption_experience</PROPERTY>
+      <PROPERTY>occupational_hazards</PROPERTY>
+      <PROPERTY>sports</PROPERTY>
+      <PROPERTY>disease_knowledge</PROPERTY>
+      <PROPERTY>works</PROPERTY>
+      <PROPERTY>blood_thin_drugs</PROPERTY>
+      <PROPERTY>disaggregants</PROPERTY>
+      <PROPERTY>employee_id</PROPERTY>
+      <PROPERTY>version</PROPERTY>
+      <PROPERTY>date</PROPERTY>
+    </ENTITY>
+    
+    
+    <!-- <ENTITY ent_id="clinical_data">-->
+    <!--  <PROPERTY>visit_id</PROPERTY>-->
+    <!--  <PROPERTY>main_diag</PROPERTY>-->
+    <!--  <PROPERTY>Aortic_dissection</PROPERTY>-->
+    <!--  <PROPERTY>intramural_hematoma</PROPERTY>-->
+    <!--  <PROPERTY>aortic_rupture</PROPERTY>-->
+    <!--  <PROPERTY>patient_state</PROPERTY>-->
+    <!--  <PROPERTY>pain_beh_stern</PROPERTY>-->
+    <!--  <PROPERTY>interscap_reg_pain</PROPERTY>-->
+    <!--  <PROPERTY>conscious_loss</PROPERTY>-->
+    <!--  <PROPERTY>low_extrem_ischemia</PROPERTY>-->
+    <!--  <PROPERTY>employee_id</PROPERTY>-->
+    <!--  <PROPERTY>version</PROPERTY>-->
+    <!--  <PROPERTY>date</PROPERTY>-->
+    <!--</ENTITY>-->
+    
+    <!-- <ENTITY ent_id="patients_info">-->
+    <!--  <PROPERTY>id</PROPERTY>-->
+    <!--  <PROPERTY>name</PROPERTY>-->
+    <!--  <PROPERTY>surname</PROPERTY>-->
+    <!--  <PROPERTY>patronymic</PROPERTY>-->
+    <!--  <PROPERTY>birth_date</PROPERTY>-->
+    <!--  <PROPERTY>sex</PROPERTY>-->
+    <!--</ENTITY>-->
+
+
+    <RELATIONSHIPS ent_ids = "patients_info concom_disease ">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+    
+   <RELATIONSHIPS ent_ids = "patients_info patirnt_history">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+    <RELATIONSHIPS ent_ids = "patients_info anthropometry">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+    <RELATIONSHIPS ent_ids = "patients_info visit_data">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+    
+    <RELATIONSHIPS ent_ids = "visit_data clinical_data">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+    <RELATIONSHIPS ent_ids = "visit_data echocardiography">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+     <RELATIONSHIPS ent_ids = "visit_data msqc_angiography_aorta">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+    <RELATIONSHIPS ent_ids = "visit_data clinics">
+      <PROPERTY>ONE TO ONE</PROPERTY>
+    </RELATIONSHIPS>
+   
+   
+   <RELATIONSHIPS ent_ids = "clinics employess">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+   
+   <RELATIONSHIPS ent_ids = "roles employess">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+    
+    <RELATIONSHIPS ent_ids = "occupation employess">
+      <PROPERTY>ONE TO MANY</PROPERTY>
+    </RELATIONSHIPS>
+   
+  </DATA>
+  <TECHSPEC>
+    <TYPE>Web-development</TYPE>
+    <DEVTOOLS>
+      <DEV>PHP</DEV>
+      <DEV>Laravel</DEV>
+      <DEV>EloquentOPM</DEV>
+    </DEVTOOLS>
+    <DBMS>
+      <TITLE>MySQL</TITLE>
+      <VERSION>5.7.36</VERSION>
+      <REASONING>Удобное взаимодействие с входными данными</REASONING>
+    </DBMS>
+  </TECHSPEC>
+</ISSPECS>
